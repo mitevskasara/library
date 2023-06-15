@@ -4,7 +4,7 @@ import "./global.css";
 export function App() {
   return (
     <div style={{ padding: '50px' }}>
-      <Button>Primary</Button>
+      <Button loading>Primary</Button>
       <br />
       <br />
       <Button disabled>Disabled</Button>
@@ -16,13 +16,13 @@ export function App() {
       <Button size='large'>Primary large</Button>
       <br />
       <br />
-      <Button variant='secondary'>Secondary</Button>
+      <Button variant='secondary' loading>Secondary</Button>
       <br />
       <br />
       <Button variant='secondary' disabled>Disabled</Button>
       <br />
       <br />
-      <Button variant='accent'>Accent</Button>
+      <Button variant='accent' loading>Accent</Button>
       <br />
       <br />
       <Button variant='accent' disabled>Disabled</Button>

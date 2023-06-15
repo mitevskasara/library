@@ -1,10 +1,13 @@
 import './button.css';
 
-function Button({ children, variant = 'primary', className, size = 'medium', ...props }) {
+function Button({ children, variant = 'primary', className, loading = false, size = 'medium', disabled, ...props }) {
   return (
-    <button {...props} className={`button button--${variant} button--${size} ${className}`}>
-      {children}
-    </button>
+    <div className="container">
+      <button {...props} className={`button button--${variant} button--${size} ${className}`} disabled={disabled || loading}>
+        {children}
+      </button>
+      {loading && <div className={`loader loader--${variant}`} />}
+    </div>
   );
 }
 

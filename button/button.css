@@ -1,19 +1,22 @@
+.container {
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+}
+
 .button--small {
   font-size: small;
   padding: 12px 16px;
-  cursor: pointer;
 }
 
 .button--medium {
   font-size: medium;
   padding: 16px 24px;
-  cursor: pointer;
 }
 
 .button--large {
   font-size: large;
   padding: 18px 24px;
-  cursor: pointer;
 }
 
 .button:disabled {
@@ -59,4 +62,37 @@
   background-color: unset;
   border: 0;
   color: var(--primary);
+}
+
+@keyframes loading {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.loader {
+  width: 0;
+  height: 100%;
+  animation: loading 5s linear forwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: var(--border-radius);
+}
+
+.loader--primary {
+  background-color: var(--primary);
+}
+
+.loader--secondary {
+  background-color: var(--secondary);
+}
+
+.loader--accent {
+  background-color: var(--accent);
 }
