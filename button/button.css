@@ -1,7 +1,62 @@
-.button {
-  background-color: #E8AA42;
-  padding: 10px;
+.button--small {
+  font-size: small;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.button--medium {
+  font-size: medium;
+  padding: 16px 24px;
+  cursor: pointer;
+}
+
+.button--large {
+  font-size: large;
+  padding: 18px 24px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button--primary {
+  background-color: var(--primary);
+  color: var(--light);
   border: 0;
-  border-radius: 5px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: var(--border-radius);
+}
+
+.button--primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.button--secondary {
+  background-color: var(--white);
+  border: 2px solid var(--primary);
+  color: var(--paragraph);
+  border-radius: var(--border-radius);
+}
+
+.button--secondary:hover {
+  background-color: var(--disabled);
+  opacity: 1.5;
+}
+
+.button--accent {
+  background-color: var(--accent);
+  color: var(--light);
+  border: 0;
+  border-radius: var(--border-radius);
+}
+
+.button--accent:hover {
+  background-color: var(--accent-dark);
+}
+
+.button--text {
+  background-color: unset;
+  border: 0;
+  color: var(--primary);
 }

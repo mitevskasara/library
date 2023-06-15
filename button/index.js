@@ -1,11 +1,9 @@
 import './button.css';
 
-function Button() {
+function Button({ children, variant = 'primary', className, size = 'medium', ...props }) {
   return (
-    <button className="button">
-      This is a Button component from my
-      <br />
-      <a href='https://github.com/mitevskasara/library'>Component library</a>
+    <button {...props} className={`button button--${variant} button--${size} ${className}`}>
+      {children}
     </button>
   );
 }

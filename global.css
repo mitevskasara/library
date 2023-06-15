@@ -1,0 +1,18 @@
+:root {
+  --primary: #30475E;
+  --secondary: #DDDDDD;
+  --accent: #FFD369;
+  --error: #F05454;
+  --disabled: #EEEEEE;
+
+  --primary-dark: #243445;
+  --secondary-dark: #bfbfbf;
+  --accent-dark: #f7c244;
+
+  --heading: #222831;
+  --paragraph: #393E46;
+  --link: #1F4068;
+  --light: #fcfcfc;
+
+  --border-radius: 3px;
+}
