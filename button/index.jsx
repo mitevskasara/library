@@ -1,4 +1,5 @@
 import './button.css';
+import "../global.css";
 
 function Button({ children, variant = 'primary', className, loading = false, size = 'medium', disabled, ...props }) {
   return (
